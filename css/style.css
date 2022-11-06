@@ -1,0 +1,154 @@
+@charset "utf-8";
+
+html {
+  font-size: 100%;
+
+}
+
+body* {
+  box-sizing: border-box;
+}
+
+img {
+  width: 100%;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+/*---------------
+全体　色分け
+---------------*/
+
+#header {
+  height: 100vh;
+  width: 100%;
+ 
+}
+
+#main {
+  /* background-color: rgb(164, 219, 164); */
+}
+
+#footer {
+  background-color:rgb(235, 226, 142);
+  height: 200px;
+  
+}
+
+.wrapper {
+  max-width: 80%;
+  margin: 0 auto;
+}
+
+
+/*---------------
+header
+---------------*/
+.site-title {
+  text-align: center;
+  font-weight: normal;
+}
+
+#header {
+  height: 100vh;
+  background-color: #B2D6D0;
+  width: 100%;
+  position: relative;
+}
+
+.maintext{
+  color: white;
+  position:absolute;
+  top:45%;
+  left:50%;
+  transform: translate(-50%, -50%);
+}
+
+.btn {
+  background-color: black;
+  position: absolute;
+  top:10%;
+  right:5%;
+  width:50px;
+  height:50px;
+  transform: translate(-50%,-50%);
+}
+
+/*---------------
+main
+---------------*/
+#main {
+  text-align: center;
+  margin-top: 100px;
+}
+#main div{
+  text-align: center;
+  margin-bottom: 140px;
+}
+
+.section-title {
+  margin-bottom: 100px;
+  font-size: 1.5rem;
+  font-weight: normal;
+}
+
+.items {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  
+}
+
+.item {
+  width: calc(100%/3);
+  padding:10px;
+
+}
+
+
+
+#about {
+
+}
+#about h3 {
+  margin-bottom: 25px;
+}
+#about h3 p{
+  font-weight: normal;
+}
+.mailcontact {
+  text-transform: uppercase;
+  border: 1px solid black;
+  padding: 10px 30px;
+}
+
+/*---------------
+footer
+---------------*/
+
+#footer {
+  text-align: center;
+}
+
+/*---------------
+レスポンシブ
+---------------*/
+
+@media screen and (max-width:700px){
+  .items {
+    flex-direction: column;
+    width: 100%;     
+  }
+  .item {
+    width: 100%;
+    margin-bottom: 20px;
+  
+  }
+}
