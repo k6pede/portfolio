@@ -5,7 +5,7 @@ html {
 }
 
 body {
-  background-color: #9cc3bd;
+  background-color: #181a1a;
   color: white;
 }
 body* {
@@ -28,7 +28,7 @@ a {
 
 .wrapper
 {
-  max-width: 800px;
+  max-width: 1200px;
   margin: 100px auto;
 }
 
@@ -46,13 +46,18 @@ a {
   position: absolute;
   top:5%;
   right:5%;
-
 }
 .nav ul{
   display: flex;
 }
 .nav ul li{
   padding-left: 2rem;
+}
+.opennav a:hover {
+  color: pink;
+}
+.site-title {
+  font-size: 4rem;
 }
 
 .maintext{
@@ -65,7 +70,9 @@ a {
 }
 
 
-/* btn */
+/*-------------------------
+btn
+-------------------------*/
 
 #mask {
   display: none;
@@ -150,7 +157,9 @@ a {
 
 }
 
-/* works */
+/*------------------------- 
+works
+-------------------------*/
 a img:hover {
   transition:1s all;
   opacity: 0.5;
@@ -158,20 +167,22 @@ a img:hover {
 
 
 
-/* about */
+/*-------------------------
+about
+-------------------------*/
 #about {
-  margin-bottom: 300px;
+
 }
 
 .aboutItems {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   font-size: 0.875rem;
   align-items: center;
-
+  padding: 0 20px;
 }
 .aboutItems div {
-  width: 48%;
+  width: 40%;
 }
 
 
@@ -179,25 +190,59 @@ a img:hover {
 
 
 
+/*------------------------- 
+contact 
+-------------------------*/
 
-
-/* contact */
 #contact {
   text-align: center;
   max-width: 400px;
+  margin:0 auto;
 }
 
-/* footer */
 
+/*------------------------- 
+footer
+-------------------------*/
 #footer {
-  background-color:rgb(235, 226, 142);
-  height:100px;
+  background-color:rgb(0, 0, 0);
+  height:auto;
+}
+#footer p{
+  padding-bottom: 10px;
+}
+.sns-link {
+  padding-top:20px;
+}
+.socialEffect__box {
+  display: flex;
+  justify-content: space-around;
+  padding: 0;
+}
+.socialEffect__box a:hover{
+  color: pink;
+  transform: scale(1.1);
+}
+.socialEffect__link {
+  margin: .3em;
+  display: block;
+  width: 60px;
+  height: 60px;
+  line-height: 60px;
+  border-radius: 50%;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+  color: #bfbfbf;
+  font-size: 1.6rem;
 
-  
+  transition: transform ease-out 0.2s;
 }
 
 
-
+/*------------------------- 
+responsive
+-------------------------*/
 
 @media screen and (max-width:700px){
   #main .container .row {
@@ -234,8 +279,9 @@ a img:hover {
   }
 } 
 
-
-/* animation */
+/*------------------------- 
+animation
+-------------------------*/
 
 .fadeUp{
   animation-name:fadeUpAnime;
