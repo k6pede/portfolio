@@ -163,6 +163,20 @@ a img:hover {
   margin-bottom: 300px;
 }
 
+.aboutItems {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.875rem;
+  align-items: center;
+
+}
+.aboutItems div {
+  width: 48%;
+}
+
+
+
+
 
 
 
@@ -206,7 +220,19 @@ a img:hover {
     color: #fff;
     background-color:white;
   }
-}
+
+
+   .aboutItems {
+    flex-direction: column;
+    width: 100%;
+  }
+   .aboutItems div{
+    width: 90%;
+  }
+   .aboutItems img{
+    margin-bottom: 20px;
+  }
+} 
 
 
 /* animation */
